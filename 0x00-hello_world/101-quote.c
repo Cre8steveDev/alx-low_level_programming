@@ -7,8 +7,7 @@
 #include <string.h>
 int main(void)
 {
-char our_name[] = "and that piece of art is useful\"
-- Dora Korpar, 2015-10-19\n";
-write(2, our_name, strlen(our_name));
+char n[] = "and that piece of art is useful\"- Dora Korpar, 2015-10-19";
+write(2, n, strlen(n));
 return (1);
 }
