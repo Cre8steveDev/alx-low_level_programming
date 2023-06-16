@@ -18,9 +18,10 @@ int main(void)
 		{
 			putchar(i);
 			putchar(j);
-			if (i != '8')
+			if (i != '8'){
 				putchar(44);
-			putchar(32);
+				putchar(32);
+			};
 		};
 	};
 	putchar('\n');
