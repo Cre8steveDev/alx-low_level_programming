@@ -8,12 +8,15 @@
 
 int main(void)
 {
-	for (int i = 0; i <= 99; i++)
+	int i;
+
+	for (i = 0; i <= 99; i++)
 	{
 		int firstTens = i / 10;
 		int firstUnits = i % 10;
+		int j;
 
-		for (int j = i; j <= 99; j++)
+		for (j = i; j <= 99; j++)
 		{
 			int secondTens = j / 10;
 			int secondUnits = j % 10;
