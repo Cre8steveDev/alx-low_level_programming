@@ -28,8 +28,8 @@ int main(void)
 				putchar(' ');
 				putchar(secondTens + '0');
 				putchar(secondUnits + '0');
-				
-				if (j < 99)
+
+				if (i != 99)
 				{
 					putchar(',');
 					putchar(' ');
