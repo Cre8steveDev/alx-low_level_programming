@@ -18,7 +18,8 @@ int main(void)
 		{
 			putchar(i);
 			putchar(j);
-			putchar(44);
+			if (i != '8' && j != '9')
+				putchar(44);
 			putchar(32);
 		};
 	};
