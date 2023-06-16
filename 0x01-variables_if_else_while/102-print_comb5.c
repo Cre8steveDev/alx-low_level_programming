@@ -29,7 +29,7 @@ int main(void)
 				putchar(secondTens + '0');
 				putchar(secondUnits + '0');
 
-				if (firstTens != 9 && firstUnits != 9 && secondTens != 9 && secondUnits != 9)
+				if (i != 98)
 				{
 					putchar(',');
 					putchar(' ');
