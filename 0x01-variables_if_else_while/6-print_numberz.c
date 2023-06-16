@@ -8,12 +8,11 @@
 
 int main(void)
 {
-	char d = '0';
-	int i = 0;
+	int i = 48;
 
-	while (i < 10)
+	while (i < 58)
 	{
-		putchar(d + i);
+		putchar(i);
 		i++;
 	};
 
