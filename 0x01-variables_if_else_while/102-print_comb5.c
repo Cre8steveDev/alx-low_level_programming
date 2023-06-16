@@ -28,8 +28,12 @@ int main(void)
 				putchar(' ');
 				putchar(secondTens + '0');
 				putchar(secondUnits + '0');
-				putchar(',');
-				putchar(' ');
+				
+				if (secondTens != 9 && secondUnits != 9)
+				{
+					putchar(',');
+					putchar(' ');
+				}
 			}
 		}
 }
