@@ -29,7 +29,7 @@ int main(void)
 				putchar(secondTens + '0');
 				putchar(secondUnits + '0');
 
-				if (i != 99)
+				if (i != 99 && j != 99)
 				{
 					putchar(',');
 					putchar(' ');
