@@ -16,6 +16,8 @@ for (i = 0; i < 3; i++)
 {
 for (j = i; j <= 9; j++)
 {
+if (i == 1 || i ==2)
+	j = 0;
 for (k = i; k < 6; k++)
 {
 for (l = i; l < 10; l++)
