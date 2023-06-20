@@ -14,7 +14,7 @@ int l;
 
 for (i = 0; i < 3; i++)
 {
-for (j = i + 1; j < 4; j++)
+for (j = i; j < 4; j++)
 {
 for (k = i; k < 6; k++)
 {
