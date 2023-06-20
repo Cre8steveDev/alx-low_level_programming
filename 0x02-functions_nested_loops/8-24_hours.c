@@ -17,17 +17,17 @@ for (i = 0; i < 3; i++)
 for (j = i + 1; j < 4; j++)
 {
 for (k = i; k < 6; k++)
-{               for (l = i; l < 10; l++)
-                {
-                    putchar('0' + i);
-                    putchar('0' + j);
-                    putchar(58);
-                    putchar('0' + k);
-                    putchar('0' + l);
-                    putchar('\n');
-                }
-
-            }
-        }
-    }
+{
+for (l = i; l < 10; l++)
+{
+putchar('0' + i);
+putchar('0' + j);
+putchar(58);
+putchar('0' + k);
+putchar('0' + l);
+putchar('\n');
+}
+}
+}
+}
 }
