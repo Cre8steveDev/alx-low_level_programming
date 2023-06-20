@@ -16,7 +16,7 @@ for (i = 0; i < 3; i++)
 {
 for (j = 0; j <= 9; j++)
 {
-	if (i == 2)
+	if (i == 2 && j == 5)
 		break;
 for (k = 1; k < 6; k++)
 {
