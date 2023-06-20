@@ -14,13 +14,11 @@ int l;
 
 for (i = 0; i < 3; i++)
 {
-for (j = i; j <= 9; j++)
+for (j = 0; j <= 9; j++)
 {
-if (i == 1 || i ==2)
-	j = 0;
-for (k = i; k < 6; k++)
+for (k = 0; k < 6; k++)
 {
-for (l = i; l < 10; l++)
+for (l = 0; l < 10; l++)
 {
 _putchar('0' + i);
 _putchar('0' + j);
