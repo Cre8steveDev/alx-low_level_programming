@@ -20,12 +20,12 @@ for (k = i; k < 6; k++)
 {
 for (l = i; l < 10; l++)
 {
-putchar('0' + i);
-putchar('0' + j);
-putchar(58);
-putchar('0' + k);
-putchar('0' + l);
-putchar('\n');
+_putchar('0' + i);
+_putchar('0' + j);
+_putchar(58);
+_putchar('0' + k);
+_putchar('0' + l);
+_putchar('\n');
 }
 }
 }
