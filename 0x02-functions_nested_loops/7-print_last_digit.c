@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _print_last_digit- prints last digit of a number
+ * print_last_digit- prints last digit of a number
  * @n: The character to compare
  *
  * Return: Always 0 (Success)
