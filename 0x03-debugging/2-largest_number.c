@@ -21,7 +21,8 @@ largest = a;
 */
 if (b > c)
 	largest = b;
-/*else if (b > a && b > c)
+/*
+ * else if (b > a && b > c)
 {
 largest = b;
 }
