@@ -1,9 +1,14 @@
 #include "main.h"
+#include <unistd.h>
 
 /**
+ * _putc - print a character
+ * @c: character
  * more_numbers - Function prints 0 to 14 with putchar
  * Return: Always 0 (Success)
 */
+
+int _putc(char c);
 
 void more_numbers(void)
 {
@@ -30,7 +35,12 @@ while (k < 10)
 		}
 	}
 
-	_putchar('\n');
+	_putc('\n');
 	k++;
 	}
+}
+
+int _putc(char c)
+{
+return (write(1, &c, 1));
 }
