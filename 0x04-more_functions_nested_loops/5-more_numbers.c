@@ -41,7 +41,7 @@ while (k < 10)
 	}
 }
 
-int _putc(char c)
+int _xxc(char c)
 {
 return (write(1, &c, 1));
 }
