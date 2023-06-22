@@ -13,26 +13,24 @@ while (k < 10)
 	int i = 48;
 	int j = 48;
 
-	while (k < 10)
-	{
 	while (i < 58)
 	{
-		putchar(i);
+		_putchar(i);
 		i++;
 		if (i >= 58)
 		{
 			i = 49;
 			while (j < 53)
 			{
-				putchar(i);
-				putchar(j);
+				_putchar(i);
+				_putchar(j);
 				j++;
 			}
 			break;
 		}
 	}
 
-	_putchar(1, '\n', 1);
+	_putchar('\n');
+	k++;
 	}
-}
 }
