@@ -2,6 +2,7 @@
 #include <unistd.h>
 
 /**
+ * more_numbers - entry point
  * _putc - print a character
  * @c: character
  * more_numbers - Function prints 0 to 14 with putchar
