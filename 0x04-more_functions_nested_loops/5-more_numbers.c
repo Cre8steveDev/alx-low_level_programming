@@ -7,9 +7,14 @@
 
 void more_numbers(void)
 {
+int k = 0;
+while (k < 10)
+{
 	int i = 48;
 	int j = 48;
 
+	while (k < 10)
+	{
 	while (i < 58)
 	{
 		putchar(i);
@@ -26,5 +31,8 @@ void more_numbers(void)
 			break;
 		}
 	}
+
 	_putchar(1, '\n', 1);
+	}
+}
 }
