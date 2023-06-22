@@ -3,13 +3,13 @@
 
 /**
  * more_numbers - entry point
- * _putc - print a character
+ * _xxc - print a character
  * @c: character
  * more_numbers - Function prints 0 to 14 with putchar
  * Return: Always 0 (Success)
 */
 
-int _putc(char c);
+int _xxc(char c);
 
 void more_numbers(void)
 {
@@ -36,7 +36,7 @@ while (k < 10)
 		}
 	}
 
-	_putc('\n');
+	_xxc('\n');
 	k++;
 	}
 }
