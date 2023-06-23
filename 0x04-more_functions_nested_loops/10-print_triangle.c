@@ -9,9 +9,25 @@
 void print_triangle(int size)
 {
 	if (size <= 0)
-		putchar('\n');
+		_putchar('\n');
 	else
 	{
-		printf("Helllooo");
+		int i, j, k;
+
+		for (i = 1; i <= size; i++)
+		{
+			/*First triangle decreasing*/
+			for (j = i; j < size; j++)
+			{
+				_putchar(32);
+			}
+			/*Second triangle increasing*/
+			for (k = 1; k <= i; k++)
+			{
+				_putchar(35);
+			}
+			_putchar('\n');
+		}
+		/*printf("Helllooo");*/
 	}
 }
