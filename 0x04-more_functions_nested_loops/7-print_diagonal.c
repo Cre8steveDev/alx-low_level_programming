@@ -4,7 +4,7 @@
  * print_diagonal - Function multiplies 2 numbers
  * @n: operand
  * Return: Returns 1 if true 0 if false
-*/
+ */
 
 void print_diagonal(int n)
 {
@@ -12,15 +12,16 @@ void print_diagonal(int n)
 		_putchar('\n');
 	else
 	{
-		while (n > 0)
+		int i, j;
+
+		for (i = 0; i < n; i++)
 		{
-		while (n > 0)
-		{
-			_putchar(32);
-			n--;
-		}
-		_putchar(92);
-		_putchar('\n');
+			for (j = 0; j <= i; j++)
+			{
+				_putchar(32);
+			}
+			_putchar(92);
+			_putchar('\n');
 		}
 	}
 }
