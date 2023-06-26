@@ -25,8 +25,6 @@ void rev_string(char *s)
 		temp = *end;
 		*end = *start;
 		*start = temp;
-		// printf("%c", *start);
-
 		start++;
 		end--;
 	}
