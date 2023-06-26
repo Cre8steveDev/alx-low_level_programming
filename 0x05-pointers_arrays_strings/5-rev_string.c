@@ -14,20 +14,21 @@ void rev_string(char *s)
 	start = s;
 	end = s;
 
-	for (j = 0; s[j] != '\0'; j++)
+	for (j = 0; *(s + j) != '\0'; j++)
 		length += 1;
 
 	for (i = 0; i < length - 1; i++)
 		end++;
 
-	for (i = 0; i < length / 2; i++)
+	for (i = 0; i < length; i++)
 	{
 		temp = *end;
 		*end = *start;
 		*start = temp;
+		// printf("%c", *start);
 
 		start++;
-		end++;
+		end--;
 	}
 	/**/
 }
