@@ -21,6 +21,7 @@ void rev_string(char *s)
 	for (i = 0; i < len - 1; i++)
 		end++;
 
+	// Condition means it should iterate for half of the string hence len/2
 	for (i = 0; i < len / 2; i++)
 	{
 		temp = *end;
