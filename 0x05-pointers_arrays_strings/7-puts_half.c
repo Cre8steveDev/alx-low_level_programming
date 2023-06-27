@@ -19,14 +19,17 @@ void puts_half(char *str)
 	if (length % 2 == 0)
 	{
 		hnum = (length / 2);
+
+		for (i = hnum; *(str + i) != '\0'; i++)
+			_putchar(*(str + i));
 	}
 	else
 	{
 		hnum = (length - 1) / 2;
-	}
 
-	for (i = hnum - 1; *(str + i) != '\0'; i++)
-		_putchar(*(str + i));
+		for (i = hnum - 1; *(str + i) != '\0'; i++)
+			_putchar(*(str + i));
+	}
 
 	_putchar('\n');
 
