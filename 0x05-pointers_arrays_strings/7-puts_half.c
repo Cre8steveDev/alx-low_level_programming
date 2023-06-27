@@ -22,7 +22,7 @@ void puts_half(char *str)
 	}
 	else
 	{
-		hnum = (length - 1) / 2;
+		hnum = (length - 2) / 2;
 	}
 
 	for (i = hnum; *(str + i) != '\0'; i++)
