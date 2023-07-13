@@ -1,8 +1,9 @@
 #include <stdlib.h>
+
 /**
  * string_nconcat - Concatenates the first n bytes
  * of string 2 with the full String1
- * Returns NULL if memory allocation fails
+ * gives NULL if memory allocation fails
  * @s1: Given String One
  * @s2: String to be concatenate with s1
  * @n: Given number of bytes (characters) to be copied from s2
@@ -17,9 +18,9 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	int newlength;
 	char *newptr;
 
-	if (s1 == 0)
+	if (s1 == NULL)
 		s1 = "";
-	if (s2 == 0)
+	if (s2 == NULL)
 		s2 = "";
 
 	size_s1 = _strlen(s1);
@@ -33,6 +34,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 
 	if (!newptr)
 		return (NULL);
+
 	for (i = 0; i < size_s1; i++)
 		newptr[i] = s1[i];
 	for (j = 0; j < size_s2; j++)
@@ -43,7 +45,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 }
 
 /**
- * _strlen - Returns the length of a string
+ * _strlen - Calculates the length of a string
  * @str: Received string
  * Return: count
  */
