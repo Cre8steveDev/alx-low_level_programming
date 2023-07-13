@@ -1,3 +1,4 @@
+#include <stdlib.h>
 /**
  * string_nconcat - Concatenates the first n bytes
  * of string 2 with the full String1
@@ -7,6 +8,8 @@
  * @n: Given number of bytes (characters) to be copied from s2
  * Return: Either NULL or newptr
  */
+
+unsigned int _strlen(char *str);
 
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
@@ -51,7 +54,7 @@ unsigned int _strlen(char *str)
 
 	while (*str)
 	{
-		count + 1;
+		count++;
 		str++;
 	}
 

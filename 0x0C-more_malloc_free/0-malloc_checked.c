@@ -1,3 +1,5 @@
+#include <stdlib.h>
+
 /**
  * malloc_checked - Function that returns a void address of b bytes
  * Returns NULL if memory allocation fails
