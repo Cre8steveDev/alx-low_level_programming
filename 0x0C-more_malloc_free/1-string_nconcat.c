@@ -1,6 +1,15 @@
 #include <stdlib.h>
 
 /**
+ * _strlen - Calculates the length of a string
+ * @str: The string to calculate the length of
+ *
+ * Return: The length of the string
+ */
+
+unsigned int _strlen(char *str);
+
+/**
  * string_nconcat - Concatenates the first n bytes
  * of string 2 with the full String1
  * gives NULL if memory allocation fails
@@ -9,8 +18,6 @@
  * @n: Given number of bytes (characters) to be copied from s2
  * Return: Either NULL or newptr
  */
-
-unsigned int _strlen(char *str);
 
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
@@ -46,10 +53,10 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 
 /**
  * _strlen - Calculates the length of a string
- * @str: Received string
- * Return: count
+ * @str: The string to calculate the length of
+ *
+ * Return: The length of the string
  */
-
 unsigned int _strlen(char *str)
 {
 	unsigned int count = 0;
