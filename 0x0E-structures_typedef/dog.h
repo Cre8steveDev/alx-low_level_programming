@@ -1,10 +1,10 @@
-#if !defined(DOG_H)
+#ifndef DOG_H
 #define DOG_H
 
 /**
- * struct dog - A dog struct 
- * @name: First member 
- * @age: Second member 
+ * struct dog - A dog struct
+ * @name: First member
+ * @age: Second member
  * @owner: Third member
 */
 struct dog
