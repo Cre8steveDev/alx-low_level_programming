@@ -2,6 +2,14 @@
 #include <stdio.h>
 #include "dog.h"
 
+/**
+ * new_dog - copies content to a struct
+ * @name: First argument member
+ * @age: Second argument member
+ * @owner: Third argument member
+ * Return: _dog pointer to struct
+ */
+
 dog_t *new_dog(char *name, float age, char *owner)
 {
 	dog_t *_dog = malloc(sizeof(dog_t));
