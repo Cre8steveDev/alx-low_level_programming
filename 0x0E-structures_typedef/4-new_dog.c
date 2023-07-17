@@ -26,12 +26,16 @@ int _strlen(char *str)
  */
 void _strcpy(char *s1, char *s2)
 {
+	int i = 0;
 	while (*s2)
 	{
 		*s1 = *s2;
 		s1++;
 		s2++;
+		i++;
 	}
+
+	s1[i] = '\0';
 }
 
 /**
