@@ -3,40 +3,49 @@
 #include "dog.h"
 
 /**
- * _strlen - computes the size of a string
- * @str: passed in string
- * Return: (len)
+ * _strlen - returns the length of a string
+ * @s: string to evaluate
+ *
+ * Return: the length of the string
  */
-int _strlen(char *str)
+int _strlen(char *s)
 {
-	int len = 0;
+	int i, i = 0;
 
-	while (*str)
+	while (s[i] != '\0')
 	{
-		len++;
-		str++;
-	}
-	return (len);
-}
-
-/**
- * _strcpy - copies string from s2 to s1
- * @s1: Destination string
- * @s2: Source string
- */
-void _strcpy(char *s1, char *s2)
-{
-	int i = 0;
-
-	while (*s2)
-	{
-		*s1 = *s2;
-		s1++;
-		s2++;
 		i++;
 	}
 
-	s1[i] = '\0';
+	return (i);
+}
+
+/**
+ * *_strcpy - copies the string pointed to by src
+ * to the buffer pointed to by dest
+ * @dest: pointer to the buffer in which we copy the string
+ * @src: string to be copied
+ *
+ * Return: the pointer to dest
+ */
+char *_strcpy(char *dest, char *src)
+{
+	int len, i;
+
+	len = 0;
+
+	while (src[len] != '\0')
+	{
+		len++;
+	}
+
+	for (i = 0; i < len; i++)
+	{
+		dest[i] = src[i];
+	}
+	dest[i] = '\0';
+
+	return (dest);
 }
 
 /**
