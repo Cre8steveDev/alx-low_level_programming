@@ -26,11 +26,10 @@ int _strlen(char *str)
  */
 void _strcpy(char *s1, char *s2)
 {
-	int i = 0;
-
 	while (*s2)
 	{
-		s1[i] = s2[i];
+		*s1 = *s2;
+		s1++;
 		s2++;
 	}
 }
@@ -60,4 +59,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 
 	_strcpy(_dog->name, name);
 	_strcpy(_dog->owner, owner);
+	_dog->age = age;
+
+	return (_dog);
 }
