@@ -33,3 +33,13 @@ Write a function that prints a  `struct dog`
 -   If  `d`  is  `NULL`  print nothing.
 
 `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 2-main.c 2-print_dog.c -o c`
+
+### 4. A door is what a dog is perpetually on the wrong side of
+Write a function that creates a new dog.
+
+-   Prototype:  `dog_t *new_dog(char *name, float age, char *owner);`
+-   You have to store a copy of  `name`  and  `owner`
+-   Return  `NULL`  if the function fails
+````
+gcc -Wall -pedantic -Werror -Wextra -std=gnu89 4-main.c 4-new_dog.c -o e
+````
