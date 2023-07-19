@@ -8,7 +8,10 @@
 
 int int_index(int *array, int size, int (*cmp)(int))
 {
-	int x;
+	int x, y;
+
+	if (!array || !size || !cmp)
+		return;
 
 	if (size <= 0)
 		return (-1);
