@@ -17,4 +17,10 @@ Write a function that prints a name.
 
 ``gcc -Wall -pedantic -Werror -Wextra -std=gnu89 0-main.c 0-print_name.c -o a``
 
-#### 1. 
+#### 1. If you spend too much time thinking about a thing, you'll never get it done
+
+Write a function that executes a function given as a parameter on each element of an array.
+
+- Prototype: void array_iterator(int *array, size_t size, void (*action)(int));
+- where size is the size of the array
+- and action is a pointer to the function you need to use

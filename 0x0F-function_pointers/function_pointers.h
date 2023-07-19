@@ -1,6 +1,10 @@
 #ifndef FUNCTIONPOINTERS_H
 #define FUNCTIONPOINTERS_H
 
-void print_name(char *name, void (*f)(char *));
+#include <stdlib.h>
+#include <stddef.h>
 
-#endif /*FUNCTION_POINTERS*/
+void print_name(char *name, void (*f)(char *));
+void array_iterator(int *array, size_t size, void (*action)(int));
+
+#endif /*FUNCTIONPOINTERS*/
