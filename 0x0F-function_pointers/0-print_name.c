@@ -1,5 +1,5 @@
 /**
- * print_name - A fnction with a string and callback
+ * print_name - A function with a string and callback
  * @name: Argument of name
  * @f: Callback function
  * Return: Always void
