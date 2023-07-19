@@ -1,3 +1,5 @@
+#include <stddef.h>
+
 /**
  * int_index - Searches for the index of a match
  * @array: Array argument
@@ -8,10 +10,10 @@
 
 int int_index(int *array, int size, int (*cmp)(int))
 {
-	int x, y;
+	int x;
 
 	if (!array || !size || !cmp)
-		return;
+		return (-1);
 
 	if (size <= 0)
 		return (-1);
