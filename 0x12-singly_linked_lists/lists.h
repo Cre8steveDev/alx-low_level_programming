@@ -1,13 +1,11 @@
-#ifndef LISTS_H
-#define LISTS_H
+#if !defined(MAIN_H)
+#define MAIN_H
 
-#include <stdio.h>
 #include <stdlib.h>
 #include <stddef.h>
 
-
 /**
- * struct list_s - singly linked list
+ * list_s - singly linked list
  * @str: string - (malloc'ed string)
  * @len: length of the string
  * @next: points to the next node
@@ -22,7 +20,6 @@ typedef struct list_s
 } list_t;
 
 /* Function Prototypes */
-
 size_t print_list(const list_t *h);
 
-#endif
+#endif // MAIN_H
