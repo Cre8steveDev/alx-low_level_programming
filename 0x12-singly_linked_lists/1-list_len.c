@@ -2,7 +2,7 @@
 
 /**
  * list_len - A function that returns the lenght of a list
- * @h - pointer to a list
+ * @h: pointer to a list
  * Return: len
  */
 
