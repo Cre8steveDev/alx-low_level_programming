@@ -1,7 +1,18 @@
 #include <stdio.h>
 
 /**
- * _constructor - As above the GCC offers an attribute which
+ * _constructor - function called before main
+ * Return: Void Always
+ */
+void _constructor() __attribute__((constructor));
+
+void _constructor()
+{
+	printf("You're beat! and yet, you must allow,\nI bore my house upon my back!\n");
+}
+
+/**
+ * constructor - As above the GCC offers an attribute which
  * Allows you define a function that is called/executed
  * before the main function of the program is executed.
  *
@@ -13,10 +24,3 @@
  *     printf("Destructor called after main()\n");
  * }
  */
-
-void _constructor() __attribute__((constructor));
-
-void _constructor()
-{
-	printf("You're beat! and yet, you must allow,\nI bore my house upon my back!\n");
-}
