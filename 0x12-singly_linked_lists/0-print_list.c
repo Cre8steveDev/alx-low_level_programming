@@ -11,9 +11,6 @@ size_t print_list(const list_t *h)
 	size_t num_nodes = 0;
 	const list_t *temp = h;
 
-	if (h == NULL)
-		return (-1);
-
 	while (temp)
 	{
 		if (temp->str == NULL)
