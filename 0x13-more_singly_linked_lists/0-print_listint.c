@@ -9,7 +9,7 @@
 size_t print_listint(const listint_t *h)
 {
 	size_t num_node = 0;
-	listint_t *ptr = h;
+	listint_t *ptr = (listint_t *)h;
 
 	if (h == NULL)
 		return (0);
