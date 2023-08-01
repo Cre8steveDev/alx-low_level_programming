@@ -4,7 +4,7 @@
  * free_listint2 - frees the allocated memory of list members
  * and assigns the head to NULL
  * @head: Pointer to list to be freed
- * Return: Void
+ * Return: Void return function
  */
 
 void free_listint2(listint_t **head)
