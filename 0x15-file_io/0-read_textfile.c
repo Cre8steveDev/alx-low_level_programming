@@ -14,7 +14,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	int openFile;
 	char *readStr = malloc((letters + 1) * sizeof(char));
 
-	if (!filename)
+	if (filename == NULL)
 		return (0);
 
 	openFile = open(filename, O_RDONLY);
@@ -26,13 +26,14 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		return (0);
 
 	num_printed = write(STDIN_FILENO, readStr, num_read);
-	if (num_printed == -1)
+	if (num_printed == -1 || num_printed != num_read)
 	{
 		free(readStr);
 		return (0);
 	}
 
 	free(readStr);
+	close(openFile);
 
 	return (num_printed);
 }
