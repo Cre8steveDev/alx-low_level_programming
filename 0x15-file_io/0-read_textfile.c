@@ -21,7 +21,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 
 	openFile = open(filename, O_RDONLY);
 	num_read = read(openFile, buffer, letters);
-	num_printed = write(STDIN_FILENO, buffer, (size_t)num_read);
+	num_printed = write(STDOUT_FILENO, buffer, num_read);
 
 	if (num_printed != num_read)
 	{
@@ -30,6 +30,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		return (0);
 	}
 
+	free(buffer);
 	close(openFile);
 	return (num_printed);
 }
