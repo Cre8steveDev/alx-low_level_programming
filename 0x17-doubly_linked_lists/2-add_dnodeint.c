@@ -3,8 +3,9 @@
 /**
  * add_dnodeint - Adds a node to the beginning
  * of a  doubly linked list
- * @h: Double pointer to the head node
+ * @head: Double pointer to the head node
  * @n: New member value
+ * Return: NULL or new address
  */
 
 dlistint_t *add_dnodeint(dlistint_t **head, const int n)
@@ -13,7 +14,7 @@ dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 
 	newNode = malloc(sizeof(dlistint_t));
 	if (!newNode)
-		return NULL;
+		return (NULL);
 
 	newNode->n = n;
 
@@ -21,7 +22,7 @@ dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 	{
 		newNode->next = *head;
 		newNode->prev = NULL;
-		*head = newNode;
+		*head = (newNode);
 
 		return (newNode);
 	}
