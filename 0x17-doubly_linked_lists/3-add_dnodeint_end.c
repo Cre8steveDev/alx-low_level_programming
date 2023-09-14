@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * add_dnodeint - Adds a node to the beginning
+ * add_dnodeint_end - Adds a node to the beginning
  * of a  doubly linked list
  * @head: Double pointer to the head node
  * @n: New member value
