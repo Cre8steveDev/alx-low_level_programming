@@ -17,9 +17,9 @@ int main(void)
 
     ht = hash_table_create(7);
     hash_table_set(ht, "betty", "cool");
-    hash_table_set(ht, "hetairas", "001");
-    hash_table_set(ht, "heliotropes", "002");
-    hash_table_set(ht, "depravement", "003");
+    hash_table_set(ht, "betty", "001");
+    hash_table_set(ht, "betty", "002");
+    hash_table_set(ht, "betty", "003");
     hash_table_set(ht, "stylist", "004");
     hash_table_set(ht, "mentioner", "005");
     hash_table_set(ht, "neurospora", "006");
