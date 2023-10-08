@@ -9,13 +9,13 @@
  * Return: Always EXIT_SUCCESS.
  */
 
-/*void print_hash_table(hash_table_t *ht);*/
+void print_hash_table(hash_table_t *ht);
 
 int main(void)
 {
     hash_table_t *ht;
 
-    ht = hash_table_create(30);
+    ht = hash_table_create(7);
     hash_table_set(ht, "betty", "cool");
     hash_table_set(ht, "hetairas", "001");
     hash_table_set(ht, "heliotropes", "002");
@@ -29,7 +29,7 @@ int main(void)
 
     return (EXIT_SUCCESS);
 }
-/*
+
 void print_hash_table(hash_table_t *ht)
 {
     unsigned long int num = 0;
@@ -46,7 +46,7 @@ void print_hash_table(hash_table_t *ht)
 
             while (item != NULL)
             {
-                printf("Key: %s : Value %s\t", item->key, item->value);
+                printf("Key: %s : Value: %s\t", item->key, item->value);
                 item = item->next;
             }
         }
@@ -58,4 +58,3 @@ void print_hash_table(hash_table_t *ht)
         num++;
     }
 }
-*/
