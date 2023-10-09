@@ -34,6 +34,8 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	{
 		if (strcmp((ht->array[index])->key, newkey) == 0)
 		{
+			free(ht->array[index]->value);
+			ht->array[index]->value = NULL;
 			ht->array[index]->value = new_node->value;
 		}
 		else
